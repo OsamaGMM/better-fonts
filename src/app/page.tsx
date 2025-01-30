@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
+import Header from "@/components/Header";
 
 export default function Home() {
 	return (
-		<div className="">
-			<h1 className=" text-9xl">Better Fonts</h1>
+		<div className="grid grid-col-12">
 		</div>
 	);
 }
