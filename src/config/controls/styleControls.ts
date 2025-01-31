@@ -8,6 +8,7 @@ export type SliderControlProps = {
   max: number;
   step: number;
 }
+import type { FontStyles } from "@/types/font";
 
 export const defaultControls = [
 	{
@@ -87,7 +88,7 @@ export const variableControls = [
 		defaultValue: 16,
 	},
 	{
-		id: "fontSlant", // slnt axis
+		id: "slant", // slnt axis
 		label: "Slant",
 		min: -15,
 		max: 15,
@@ -96,7 +97,7 @@ export const variableControls = [
 		defaultValue: 0,
 	},
 	{
-		id: "fontStyle", // ital axis
+		id: "style", // ital axis
 		label: "Italic",
 		min: 0,
 		max: 1,
@@ -105,3 +106,16 @@ export const variableControls = [
 		defaultValue: 0,
 	},
 ];
+
+export const defaultStyles: FontStyles ={
+  size: 16,
+  lineHeight: 1.5,
+  letterSpacing: 0,
+  wordSpacing: 0,
+  fontWeight: 400,
+  weight: 400,
+  width: 100,
+  opticalSize: 16,
+  slant: 0,
+  style: 0,
+};
