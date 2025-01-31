@@ -30,7 +30,7 @@ export default function RootLayout({
 				<script src="https://unpkg.com/react-scan/dist/auto.global.js" async />
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased mx-8`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased mx-4 md:mx-8`}
 			>
 				<Header />
 				<NuqsAdapter>{children}</NuqsAdapter>

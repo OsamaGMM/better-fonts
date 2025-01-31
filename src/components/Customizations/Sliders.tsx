@@ -8,7 +8,7 @@ import { useQueryState, parseAsFloat } from "nuqs";
 
 function Sliders({ controls }: { controls: SliderControlProps[] }) {
 	return (
-		<div className="col-start-6 col-end-12 flex justify-between gap-2">
+		<div className="col-start-7 col-end-11 flex justify-between gap-2">
 			{controls.map((control) => (
 				<SingleSlider key={control.id} control={control} />
 			))}

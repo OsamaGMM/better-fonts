@@ -56,6 +56,11 @@ module.exports = {
       fontFamily:{
         'geist-sans': 'var(--font-geist-sans)',
         'geist-mono': 'var(--font-geist-mono)'
+      },
+			width: {
+        'half': 'calc(50% - 1rem)',
+        'third': 'calc(33% - 1rem)',
+        'fourth': 'calc(25% - 1rem)',
       }
   	}
   },

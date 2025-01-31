@@ -22,7 +22,7 @@ export default function ResetAll() {
 		// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 		<div
 			onClick={handleReset}
-			className="hover:cursor-pointer mx-4 col-start-5 col-end-6 row-end-2 row-span-2 content-center justify-items-end"
+			className="hover:cursor-pointer mx-4 col-start-6 col-end-7 row-end-2 row-span-2 content-center justify-items-end"
 		>
 			<RefreshCcw />
 		</div>
