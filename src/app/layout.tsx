@@ -3,33 +3,36 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Better Fonts",
-  description: "Best app to compare fonts",
+	title: "Better Fonts",
+	description: "Best app to compare fonts",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-      >
-        <Header/>
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<head>
+				<script src="https://unpkg.com/react-scan/dist/auto.global.js" async />
+			</head>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased mx-8`}
+			>
+				<Header />
+				{children}
+			</body>
+		</html>
+	);
 }

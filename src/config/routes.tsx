@@ -1,4 +1,3 @@
-// config/routes.ts
 export const NAVIGATION_ITEMS = [
 	{
 		name: "Playground",

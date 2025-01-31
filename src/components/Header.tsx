@@ -15,7 +15,7 @@ const Header = () => {
 	);
 
 	return (
-		<header className="mx-8">
+		<header>
 			<div className="flex justify-between items-center">
 				<div className="flex min-h-full items-center space-x-4 text-sm">
 					<Link href="/">
