@@ -7,6 +7,7 @@ import {
 } from "@/config/controls/styleControls";
 import type { FontStyles } from "@/types/font";
 
+
 const initializeStyles = () => {
 	const styles: FontStyles = {} as FontStyles;
 
@@ -36,7 +37,7 @@ interface FontStore {
 const useFontStore = create<FontStore>((set) => ({
 	// Font style states
 	styles: initializeStyles(),
-
+	
 	// Actions
 	updateStyle: (property: keyof FontStyles, value: number) =>
 		set((state) => ({

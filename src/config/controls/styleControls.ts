@@ -7,6 +7,7 @@ export type SliderControlProps = {
   min: number;
   max: number;
   step: number;
+	query: string
 }
 import type { FontStyles } from "@/types/font";
 
@@ -19,6 +20,7 @@ export const defaultControls = [
 		step: 1,
 		unit: "px",
 		defaultValue: 16,
+		query: 's'
 	},
 	{
 		id: "lineHeight",
@@ -28,6 +30,7 @@ export const defaultControls = [
 		step: 0.1,
 		unit: "",
 		defaultValue: 1.5,
+		query: 'lh'
 	},
 	{
 		id: "letterSpacing",
@@ -37,6 +40,7 @@ export const defaultControls = [
 		step: 0.1,
 		unit: "px",
 		defaultValue: 0,
+		query: 'ls'
 	},
 	{
 		id: "wordSpacing",
@@ -46,6 +50,7 @@ export const defaultControls = [
 		step: 100,
 		unit: "",
 		defaultValue: 100,
+		query: 'ws'
 	},
 	{
 		id: "fontWeight",
@@ -55,6 +60,7 @@ export const defaultControls = [
 		step: 100,
 		unit: "",
 		defaultValue: 400,
+		query: 'fw'
 	},
 ];
 
@@ -68,6 +74,7 @@ export const variableControls = [
 		step: 5,
 		unit: "",
 		defaultValue: 400,
+		query: 'vw'
 	},
 	{
 		id: "width", // wdth axis
@@ -77,6 +84,7 @@ export const variableControls = [
 		step: 1,
 		unit: "%",
 		defaultValue: 100,
+		query: 'wi'
 	},
 	{
 		id: "opticalSize", // opsz axis
@@ -86,6 +94,7 @@ export const variableControls = [
 		step: 1,
 		unit: "px",
 		defaultValue: 16,
+		query: 'os'
 	},
 	{
 		id: "slant", // slnt axis
@@ -95,6 +104,7 @@ export const variableControls = [
 		step: 1,
 		unit: "deg",
 		defaultValue: 0,
+		query: 'sl'
 	},
 	{
 		id: "style", // ital axis
@@ -104,6 +114,7 @@ export const variableControls = [
 		step: 1,
 		unit: "",
 		defaultValue: 0,
+		query: 'it'
 	},
 ];
 

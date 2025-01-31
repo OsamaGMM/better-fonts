@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { NAVIGATION_ITEMS } from "@/config/routes";
+import { memo } from "react";
 
 const Header = () => {
 	const pathname = usePathname();
@@ -50,4 +51,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default memo(Header);
